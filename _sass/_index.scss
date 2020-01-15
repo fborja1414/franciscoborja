@@ -3,6 +3,9 @@
 background-color: black;
 color:white;
 margin:0;
+font-family: neue-haas-unica,sans-serif;
+font-weight: 400;
+font-style: normal;
 }
 
 $mobile-landscape: 480px;
@@ -16,13 +19,15 @@ $laptop: 1200px;
 }
 
 .info{
-  position:relative;
+  display:flex;
+  justify-content: space-between;
   top:1rem;
+  height:15vh;
   max-width: 100vw;
   width: 60vw;
-  font-size: 1rem;
+  font-size: 1em;
   line-height: 1.4;
-  padding: 0rem 1rem 1rem 1rem;
+  padding: 1rem 1rem 1rem 1rem;
 
   @keyframes pulse {
   0% {
@@ -36,6 +41,16 @@ $laptop: 1200px;
   100% {
     opacity: .3;
     text-shadow: 0px 0px 5px white;
+  }
+}
+@-webkit-keyframes opacityDown {
+  0% {
+      opacity: 1.0;
+      -webkit-opacity: 1.0;
+  }
+  100% {
+      opacity: 0.0;
+      -webkit-opacity: 0.0;
   }
 }
 
@@ -110,18 +125,19 @@ $laptop: 1200px;
   display: grid;
   grid-template-columns: 10% 45% 45%;
   transition: all 1s ease;
-      img{
-        width:300px;
-        transition:height 1s, width 1s ease;
-         }
-      }
+        img{
+          width:300px;
+          transition:height 1s, width 1s ease;
+           }
+  }
 
 .pulse{
-    animation: pulse 1s infinite;  
+    animation: pulse 1s infinite;
+    display:flex;
 }
 
 
-  .changegrid{
+.changegrid{
     display:grid;
     grid-template-columns: 1fr 50fr;
     //transition:all 1s ease;
@@ -149,27 +165,34 @@ $laptop: 1200px;
         }
   }
 
-  .neutral{
-    height:65vh;
-    width: 4vmin;
-    transition: all 1s ease;
-      img{
-        //display: none;
-      }
+
+
+  .hidden_description{
+   display:none;
   }
 
-  .off{
-    display:none;
-    //height:65vh;
-    //transition: height 1s, width 1s ease;
-      img{
-        //width:400px;
-        -webkit-animation: opacityUp 5s;
-        opacity: 1.0;
-        -webkit-opacity: 1.0;
-          //transition: height 1s,width 1s ease;
-        }
+  .webDevheader{
+    display:inline-block;
+    top:1em;
+    height:15vh;
+    max-width: 100vw;
+    width: 60vw;
+    font-size: 2em;
+    line-height: 1.4;
+    padding: 1rem 1rem 1rem 1rem;
+    @media screen and (min-width: $tablet-portrait) {
+      font-size: 1.0rem;
+      line-height: 1.4;
+    }
+
+    @media screen and (min-width: $laptop) {
+      max-width: 1200px;
+      font-size: 2em;
+      line-height: 1.4;
+      padding: 1rem 1rem 1rem 1rem;
+    }
   }
+
 
   .active {
     //left:1rem;
@@ -177,7 +200,8 @@ $laptop: 1200px;
     width:96vw;
     height:65vh;
      transition: all 1s ease;
-     overflow-x: scroll;
+     overflow-y: scroll;
+     overflow-x: hidden;
       img{
         width:700px;
         -webkit-animation: opacityUp 5s;
@@ -186,3 +210,15 @@ $laptop: 1200px;
          transition: height 1s,width 1s ease;
         }
   }
+
+
+    .neutral{
+      height:65vh;
+      width: 4vmin;
+      transition: all 1s ease;
+        img{
+          -webkit-animation: opacityDown 0.2s;
+          opacity: 0.0;
+          -webkit-opacity: 0.0;
+        }
+    }

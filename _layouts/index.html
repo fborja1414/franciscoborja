@@ -1,34 +1,19 @@
 <!DOCTYPE html>
-<!---
-  You're not supposed to be here!
-  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿
-  ⣿⣿⣿⣿⣿⣿⣿⠛⢩⣴⣶⣶⣶⣌⠙⠫⠛⢋⣭⣤⣤⣤⣤⡙⣿⣿⣿⣿⣿⣿
-  ⣿⣿⣿⣿⣿⡟⢡⣾⣿⠿⣛⣛⣛⣛⣛⡳⠆⢻⣿⣿⣿⠿⠿⠷⡌⠻⣿⣿⣿⣿
-  ⣿⣿⣿⣿⠏⣰⣿⣿⣴⣿⣿⣿⡿⠟⠛⠛⠒⠄⢶⣶⣶⣾⡿⠶⠒⠲⠌⢻⣿⣿
-  ⣿⣿⠏⣡⢨⣝⡻⠿⣿⢛⣩⡵⠞⡫⠭⠭⣭⠭⠤⠈⠭⠒⣒⠩⠭⠭⣍⠒⠈⠛
-  ⡿⢁⣾⣿⣸⣿⣿⣷⣬⡉⠁⠄⠁⠄⠄⠄⠄⠄⠄⠄⣶⠄⠄⠄⠄⠄⠄⠄⠄⢀
-  ⢡⣾⣿⣿⣿⣿⣿⣿⣿⣧⡀⠄⠄⠄⠄⠄⠄⠄⢀⣠⣿⣦⣤⣀⣀⣀⣀⠄⣤⣾
-  ⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣶⣶⡶⢇⣰⣿⣿⣟⠿⠿⠿⠿⠟⠁⣾⣿⣿
-  ⣿⣿⣿⣿⣿⣿⣿⡟⢛⡛⠿⠿⣿⣧⣶⣶⣿⣿⣿⣿⣿⣷⣼⣿⣿⣿⣧⠸⣿⣿
-  ⠘⢿⣿⣿⣿⣿⣿⡇⢿⡿⠿⠦⣤⣈⣙⡛⠿⠿⠿⣿⣿⣿⣿⠿⠿⠟⠛⡀⢻⣿
-  ⠄⠄⠉⠻⢿⣿⣿⣷⣬⣙⠳⠶⢶⣤⣍⣙⡛⠓⠒⠶⠶⠶⠶⠖⢒⣛⣛⠁⣾⣿
-  ⠄⠄⠄⠄⠄⠈⠛⠛⠿⠿⣿⣷⣤⣤⣈⣉⣛⣛⣛⡛⠛⠛⠿⠿⠿⠟⢋⣼⣿⣿
-  ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠈⠉⠉⣻⣿⣿⣿⣿⡿⠿⠛⠃⠄⠙⠛⠿⢿⣿
-  ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢬⣭⣭⡶⠖⣢⣦⣀⠄⠄⠄⠄⢀⣤⣾⣿
-  ⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⢰⣶⣶⣶⣾⣿⣿⣿⣿⣷⡄⠄⢠⣾⣿⣿⣿
 
-
---->
 <html>
 <head>
+<link rel="stylesheet" href="https://use.typekit.net/xbe8miv.css">
   <link rel="stylesheet" type="text/css" href="assets/scss/main.css">
   <script type="text/javascript" src="assets/js/main.js" > </script>
 </head>
     <body>
     <div class="headercontainer">
-      <main class="info">
-      {{ content }}
+
+      <main class="info center">
+              <a class="pulse">+</a>
+              {{ content }}
       </main>
+        <a class="hidden_description center">Website design for Elliot Evan developed using Kirby</a>
 
       <nav class="links">
         Instagram / Arena / Email
@@ -36,20 +21,20 @@
     </div>
 
     <div class="assets">
-        <div class="graphics inactive" id="1" onclick="ShowAsset(0)" onmouseover="pulse()">
-        <p id="pulse">+</p>
+        <div class="graphics inactive" id="1" onclick="showAsset(0)">
+        <p id="label">+</p>
         <img src="assets/images/socialposter.png" />
         <img src="assets/images/serendipity.png" />
       </div>
 
-      <div class="webdev inactive" id="2" onclick="ShowAsset(1)">
+      <div class="webdev inactive" id="2" onclick="showAsset(1);changeHeader()" >
         +
-        <img src="assets/images/elliotevan.png"/>
+        <img id="webdev" src="assets/images/elliotevan.png"/>
       </div>
-      <div class="inactive" id="3" onclick="ShowAsset(2)">
+      <div class="inactive" id="3" onclick="showAsset(2)">
         +
       </div>
-      <div class="inactive" id="4" onclick="ShowAsset(3)">
+      <div class="inactive" id="4" onclick="showAsset(3)">
         +
       </div>
     </div>

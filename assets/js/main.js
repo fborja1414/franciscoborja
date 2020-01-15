@@ -1,15 +1,24 @@
 //replace active class wit
-function ShowAsset(tile){
+function showAsset(tile){
   if(tile==0){
     var item = document.getElementsByClassName("inactive");
     item[0].classList.toggle("active");
+    if(item[0].classList.contains("neutral")){
+      var item = document.getElementsByClassName("inactive");
+      item[1].classList.toggle("active");
+      var item = document.getElementsByClassName("inactive");
+      item[0].classList.toggle("neutral");
+    }
+    }
 
-  }
+
   if(tile==1){
     var item = document.getElementsByClassName("inactive");
     item[1].classList.toggle("active");
     var topright=document.getElementById("1");
     topright.classList.toggle("neutral");
+    var item = document.getElementsByClassName("inactive");
+    item[0].classList.remove("active");
     var assets=document.getElementsByClassName("assets");
     assets[0].classList.add("changegrid");
 
@@ -19,12 +28,11 @@ function ShowAsset(tile){
     item[1].classList.toggle("active");
   }
 
-  //document.getElementsByClassName("graphics").style.transitionProperty = "100vw, 100vh";
-  //var webdev=getElementsByClassName("webdev");
-  //webdev.style.display="none";
 }
 
-function pulse(){
-  var pulse_node= document.getElementById("pulse");
-  pulse_node.classList.toggle("pulse");
+function changeHeader(){
+  var description_node=document.getElementsByClassName("center")
+  description_node[1].classList.toggle("webDevheader")
+  var description_node=document.getElementsByClassName("center")
+  description_node[0].classList.toggle("hidden_description")
 }
