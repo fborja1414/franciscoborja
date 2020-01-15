@@ -2,9 +2,8 @@
 <html>
 <head>
   <link rel="stylesheet" type="text/css" href="/assets/scss/main.css">
+  <script type="text/javascript" src=/assets/js/main.js > </script>
 </head>
-
-
     <body>
     <div class="headercontainer">
       <main class="info">
@@ -17,19 +16,20 @@
     </div>
 
     <div class="assets">
-      <div class="graphics">
-        +
-        <img src="assets/images/socialposter.png"/>
-        <img src="assets/images/serendipity.png"/>
+        <div class="graphics inactive" id="1" onclick="ShowAsset(0)" onmouseover="pulse()">
+        <p id="pulse">+</p>
+        <img src="assets/images/socialposter.png" />
+        <img src="assets/images/serendipity.png" />
       </div>
-      <div class="webdev">
+
+      <div class="webdev inactive" id="2" onclick="ShowAsset(1)">
         +
         <img src="assets/images/elliotevan.png"/>
       </div>
-      <div>
+      <div class="inactive" id="3" onclick="ShowAsset(2)">
         +
       </div>
-      <div>
+      <div class="inactive" id="4" onclick="ShowAsset(3)">
         +
       </div>
     </div>

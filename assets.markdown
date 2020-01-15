@@ -1,0 +1,5 @@
+---
+layout: assets
+---
+
+hello world
