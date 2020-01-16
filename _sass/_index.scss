@@ -277,15 +277,13 @@ a{
         opacity: 1.0;
         -webkit-opacity: 1.0;
          transition: height 1s,width 1s ease;
-         :hover{
-           filter:none;
-        }
         p{
           position: sticky;
           top:0;
           height:75vh;
         }
   }
+}
 
 
     .neutral{
