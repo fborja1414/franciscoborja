@@ -120,22 +120,87 @@ $laptop: 1200px;
 .graphics {
   //display: none;
   font-size: 3em;
-  height: 60vh;
+  height: 75vh;
   width:50vw;
   display: grid;
-  grid-template-columns: 10% 45% 45%;
+  grid-template-columns: 5% 50% 50%;
+  grid-template-rows: 1fr 1fr;
   transition: all 1s ease;
+
         img{
           width:300px;
+          margin:10px;
           transition:height 1s, width 1s ease;
-           }
+          &:hover{
+            filter: drop-shadow(0px 0px 10px white);
+          }
+        }
   }
+
+
 
 .pulse{
     animation: pulse 1s infinite;
     display:flex;
 }
 
+a:link, a:visited, a:active{
+  text-decoration: none;
+}
+
+
+a{
+  padding-right: 10px;
+}
+
+.instagram:hover:before{
+  content:"[";
+}
+.instagram:hover:after{
+  content:"]";
+}
+
+.arena:hover:before{
+  content:"[";
+}
+.arena:hover:after{
+  content:"]";
+}
+
+.email:hover:before{
+  content:"[";
+}
+.email:hover:after{
+  content:"]";
+}
+
+
+.hide{
+ display:none;
+ transition: height 1s, width 1s ease;
+}
+
+.graphics_active{
+  display:grid;
+  grid-template-rows: 1fr 1fr;
+  -webkit-animation: opacityUp 15s;
+  opacity: 1.0;
+  -webkit-opacity: 1.0;
+   transition: height 1s,width 1s ease;
+}
+
+.weboff{
+  display:none;
+}
+
+.webon{
+  display:inline-block;
+  width: 600px;
+  -webkit-animation: opacityUp 10s;
+  opacity: 1.0;
+  -webkit-opacity: 1.0;
+   transition: height 1s,width 1s ease;
+}
 
 .changegrid{
     display:grid;
@@ -152,7 +217,7 @@ $laptop: 1200px;
   height: 60vh;
   width:50vw;
   display:grid;
-  grid-template-columns: 10% 90%;
+  grid-template-columns: 10% 1fr 1fr;
   //justify-content: flex-start;
   transition: height 1s, width 1s;
         //:hover{
@@ -170,6 +235,7 @@ $laptop: 1200px;
   .hidden_description{
    display:none;
   }
+
 
   .webDevheader{
     display:inline-block;
@@ -198,16 +264,21 @@ $laptop: 1200px;
     //left:1rem;
     //top:1rem;
     width:96vw;
-    height:65vh;
+    height:75vh;
      transition: all 1s ease;
-     overflow-y: scroll;
-     overflow-x: hidden;
+     overflow-x:scroll;
       img{
-        width:700px;
-        -webkit-animation: opacityUp 5s;
+        width:600px;
+        left:3rem;
+        -webkit-animation: opacityUp 10s;
         opacity: 1.0;
         -webkit-opacity: 1.0;
          transition: height 1s,width 1s ease;
+        }
+        p{
+          position: sticky;
+          top:0;
+          height:75vh;
         }
   }
 

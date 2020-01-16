@@ -23,16 +23,13 @@ function showAsset(tile){
     assets[0].classList.add("changegrid");
 
   }
-  if(tile==2){
-    var item = document.getElementsByClassName("inactive");
-    item[1].classList.toggle("active");
-  }
-
 }
 
-function changeHeader(){
-  var description_node=document.getElementsByClassName("center")
-  description_node[1].classList.toggle("webDevheader")
-  var description_node=document.getElementsByClassName("center")
-  description_node[0].classList.toggle("hidden_description")
+function changeHeader(tile){
+  if(tile==1){
+  var description_node=document.getElementsByClassName("center");
+  description_node[1].classList.toggle("webDevheader");
+  var description_node=document.getElementsByClassName("center");
+  description_node[0].classList.toggle("hidden_description");
+  }
 }

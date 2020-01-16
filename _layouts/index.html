@@ -13,29 +13,38 @@
               <a class="pulse">+</a>
               {{ content }}
       </main>
-        <a class="hidden_description center">Website design for Elliot Evan developed using Kirby</a>
+        <main class="hidden_description center" id="webdescription">Website design for Elliot Evan developed using Kirby<a href="64.225.112.18" class="pulse" target="_black"><br/>LINK</a></main>
 
-      <nav class="links">
-        Instagram / Arena / Email
-      </nav>
+      <main class="links">
+        <a href="instagram.com/asapfrans/" class="instagram">Instagram</a>
+        <a href="Are.na/francisco-borja" class="arena">Arena</a>
+        <a href="mailto:fborja1414@gmail.com" class="email" target="_blank">Email</a>
+      </main>
     </div>
 
     <div class="assets">
-        <div class="graphics inactive" id="1" onclick="showAsset(0)">
+        <div class="graphics inactive" id="1" onclick="showAsset(0);graphics(0)">
         <p id="label">+</p>
-        <img src="assets/images/socialposter.png" />
-        <img src="assets/images/serendipity.png" />
+        <img src="assets/images/socialposter.jpg" />
+        <img src="assets/images/serendipity.jpg" class="hide"/>
+        <p></p>
+        <img src="assets/images/holographic.jpg" class="hide holo"/>
       </div>
 
-      <div class="webdev inactive" id="2" onclick="showAsset(1);changeHeader()" >
+      <div class="webdev inactive" id="2" onclick="showAsset(1);changeHeader(1);webdev(1)" >
         +
         <img id="webdev" src="assets/images/elliotevan.png"/>
+        <img class="weboff" src="assets/images/elliot2.png"/>
+        <p></p>
+        <img class="weboff" src="assets/images/elliot3.png"/>
+        <img class="weboff" src="assets/images/elliot4.png"/>
+        <p></p>
+        <img class="weboff" src="assets/images/elliot5.png"/>
+        <img class="weboff" src="assets/images/elliot6.png"/>
       </div>
       <div class="inactive" id="3" onclick="showAsset(2)">
-        +
       </div>
       <div class="inactive" id="4" onclick="showAsset(3)">
-        +
       </div>
     </div>
 
