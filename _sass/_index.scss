@@ -124,7 +124,7 @@ $laptop: 1200px;
   width:50vw;
   display: grid;
   grid-template-columns: 5% 50% 50%;
-  grid-template-rows: 1fr 1fr;
+  //grid-template-rows: 1fr 1fr;
   transition: all 1s ease;
 
         img{
@@ -196,7 +196,7 @@ a{
 .webon{
   display:inline-block;
   width: 600px;
-  -webkit-animation: opacityUp 10s;
+  -webkit-animation: opacityUp 5s;
   opacity: 1.0;
   -webkit-opacity: 1.0;
    transition: height 1s,width 1s ease;
@@ -204,7 +204,7 @@ a{
 
 .changegrid{
     display:grid;
-    grid-template-columns: 1fr 50fr;
+    grid-template-columns:0.2fr 100fr;
     //transition:all 1s ease;
   }
 
@@ -227,6 +227,9 @@ a{
         //margin:1rem;
         width:600px;
         transition: height 1s, width 1s ease;
+        &:hover{
+          filter: drop-shadow(0px 0px 10px white);
+        }
         }
   }
 
@@ -263,7 +266,7 @@ a{
   .active {
     //left:1rem;
     //top:1rem;
-    width:96vw;
+    width:100vw;
     height:75vh;
      transition: all 1s ease;
      overflow-x:scroll;
