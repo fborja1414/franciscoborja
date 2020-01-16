@@ -31,5 +31,29 @@ function changeHeader(tile){
   description_node[1].classList.toggle("webDevheader");
   var description_node=document.getElementsByClassName("center");
   description_node[0].classList.toggle("hidden_description");
+  var web_node=document.getElementsByClassName("weboff");
+  web_node[0].classList.toggle("webon");
+  var web_node=document.getElementsByClassName("weboff");
+  web_node[1].classList.toggle("webon");
+  var web_node=document.getElementsByClassName("weboff");
+  web_node[2].classList.toggle("webon");
+  var web_node=document.getElementsByClassName("weboff");
+  web_node[3].classList.toggle("webon");
+  var web_node=document.getElementsByClassName("weboff");
+  web_node[4].classList.toggle("webon");
+  var web_node=document.getElementsByClassName("weboff");
+  web_node[5].classList.toggle("webon");
+  var web_node=document.getElementsByClassName("weboff");
+  web_node[6].classList.toggle("webon");
   }
+}
+
+function graphics(tile){
+  if(tile==0){
+    var graphics_node=document.getElementsByClassName("hide");
+    graphics_node[0].classList.toggle("graphics_active");
+    var graphics_node=document.getElementsByClassName("hide");
+    graphics_node[1].classList.toggle("graphics_active");
+  }
+
 }
