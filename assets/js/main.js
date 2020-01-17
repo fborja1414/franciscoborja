@@ -41,10 +41,6 @@ function changeHeader(tile){
   web_node[3].classList.toggle("webon");
   var web_node=document.getElementsByClassName("weboff");
   web_node[4].classList.toggle("webon");
-  var web_node=document.getElementsByClassName("weboff");
-  web_node[5].classList.toggle("webon");
-  var web_node=document.getElementsByClassName("weboff");
-  web_node[6].classList.toggle("webon");
   }
 }
 
