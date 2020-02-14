@@ -10,7 +10,7 @@
     <div class="headercontainer">
 
       <main class="info center">
-              <a class="pulse">+</a>
+              <p class="pulse">+</p>
               {{ content }}
       </main>
         <main class="hidden_description center" id="webdescription">Website design using Adobe XD for Elliot Evan developed in Kirby with Carter Duong<a href="https://elliottevan.com/" class="pulse" target="_black"><br/>LINK</a></main>
@@ -20,25 +20,32 @@
         <a href="https://www.are.na/francisco-borja" class="arena">Arena</a>
         <a href="mailto:fborja1414@gmail.com" class="email" target="_blank">Email</a>
       </main>
+
     </div>
+
+          <main class="hiddenlinks">
+            <a href="https://www.instagram.com/asapfrans/" class="instagram">Instagram</a>
+            <a href="https://www.are.na/francisco-borja" class="arena">Arena</a>
+            <a href="mailto:fborja1414@gmail.com" class="email" target="_blank">Email</a>
+          </main>
 
     <div class="assets">
         <div class="graphics inactive" id="1" onclick="showAsset(0);graphics(0)">
-        <p id="label">+</p>
+        <span id="label">+</span>
         <img src="assets/images/socialposter.jpg" id="imghide"/>
         <img src="assets/images/serendipity.jpg" class="hide"/>
-        <p></p>
-        <img src="assets/images/holographic.jpg" class="hide holo"/>
+        <span class="hide"></span>
+        <img src="assets/images/holographic.jpg" class="hide"/>
       </div>
 
       <div class="webdev inactive" id="2" onclick="showAsset(1);changeHeader(1);webdev(1)" >
-        <p id="label">+</p>
+        <span id="label">+</span>
         <img id="webdev" src="assets/images/elliotevan.png"/>
         <img class="weboff" src="assets/images/elliot2.png"/>
-        <p></p>
+        <span></span>
         <img class="weboff" src="assets/images/elliot3.png"/>
         <img class="weboff" src="assets/images/elliot4.png"/>
-        <p></p>
+        <span></span>
         <img class="weboff" src="assets/images/elliot5.png"/>
         <img class="weboff" src="assets/images/elliot6.png"/>
       </div>
@@ -47,6 +54,8 @@
       <div class="inactive" id="4" onclick="showAsset(3)">
       </div>
     </div>
+
+
 
     </body>
 </html>

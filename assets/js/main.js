@@ -54,6 +54,10 @@ function graphics(tile){
     graphics_node[0].classList.toggle("graphics_active");
     var graphics_node=document.getElementsByClassName("hide");
     graphics_node[1].classList.toggle("graphics_active");
+    //for hidden span class
+    var graphics_node=document.getElementsByClassName("hide");
+    graphics_node[2].classList.toggle("graphics_active");
+
   }
 
 }
