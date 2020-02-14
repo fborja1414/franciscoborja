@@ -35,6 +35,8 @@ function changeHeader(tile){
   web_node[0].classList.toggle("webon");
   var cross=document.getElementById("label");
   cross.classList.toggle("crossoff");
+  var img=document.getElementById("imghide");
+  img.classList.toggle("crossoff");
   var web_node=document.getElementsByClassName("weboff");
   web_node[1].classList.toggle("webon");
   var web_node=document.getElementsByClassName("weboff");
